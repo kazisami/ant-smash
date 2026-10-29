@@ -1,0 +1,6 @@
+{
+  "name": "Ant Squasher - Toddler Bug Tap Game",
+  "description": "A delightful, offline-first ant squashing game designed for toddlers with satisfying squish animations, cheerful sounds, and offline PWA support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

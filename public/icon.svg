@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="antBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451A03" />
+      <stop offset="100%" stop-color="#1E0E04" />
+    </linearGradient>
+    <linearGradient id="splatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#BE123C" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe padding -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Playful strawberry splat splash behind ant -->
+  <path d="M256,110 C310,90 350,130 380,120 C410,110 440,160 410,200 C450,230 430,280 400,290 C420,340 370,380 330,370 C300,420 230,410 200,380 C160,410 110,370 120,330 C80,300 90,240 120,210 C90,170 130,120 170,140 C190,100 230,120 256,110 Z"
+        fill="url(#splatGrad)" opacity="0.88" />
+
+  <!-- Splat droplets -->
+  <circle cx="110" cy="130" r="14" fill="#F43F5E" />
+  <circle cx="420" cy="130" r="18" fill="#F43F5E" />
+  <circle cx="430" cy="360" r="15" fill="#F43F5E" />
+  <circle cx="95" cy="340" r="16" fill="#F43F5E" />
+  <circle cx="256" cy="70" r="12" fill="#F43F5E" />
+
+  <!-- Cute Cartoon Ant Group -->
+  <g filter="url(#shadow)" transform="translate(256, 260) rotate(-15) translate(-256, -260)">
+    <!-- Legs -->
+    <!-- Front legs -->
+    <path d="M 230 210 Q 170 180 160 150" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M 282 210 Q 342 180 352 150" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+    <!-- Middle legs -->
+    <path d="M 225 260 Q 150 255 140 270" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M 287 260 Q 362 255 372 270" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+    <!-- Back legs -->
+    <path d="M 230 310 Q 165 350 155 385" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M 282 310 Q 347 350 357 385" stroke="#1E0E04" stroke-width="12" stroke-linecap="round" fill="none" />
+
+    <!-- Cute little red sneakers on leg tips -->
+    <ellipse cx="160" cy="150" rx="10" ry="7" fill="#EF4444" transform="rotate(-30 160 150)" />
+    <ellipse cx="352" cy="150" rx="10" ry="7" fill="#EF4444" transform="rotate(30 352 150)" />
+    <ellipse cx="140" cy="270" rx="10" ry="7" fill="#EF4444" />
+    <ellipse cx="372" cy="270" rx="10" ry="7" fill="#EF4444" />
+    <ellipse cx="155" cy="385" rx="10" ry="7" fill="#EF4444" transform="rotate(20 155 385)" />
+    <ellipse cx="357" cy="385" rx="10" ry="7" fill="#EF4444" transform="rotate(-20 357 385)" />
+
+    <!-- Abdomen (back) -->
+    <ellipse cx="256" cy="335" rx="46" ry="58" fill="url(#antBody)" />
+    <!-- Thorax (middle) -->
+    <ellipse cx="256" cy="255" rx="34" ry="32" fill="url(#antBody)" />
+    <!-- Head (front) -->
+    <circle cx="256" cy="190" r="38" fill="url(#antBody)" />
+
+    <!-- Antennas with cute round tips -->
+    <path d="M 245 160 Q 225 115 195 105" stroke="#1E0E04" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="195" cy="105" r="9" fill="#F59E0B" />
+    <path d="M 267 160 Q 287 115 317 105" stroke="#1E0E04" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="317" cy="105" r="9" fill="#F59E0B" />
+
+    <!-- Big cute toddler-friendly cartoon eyes -->
+    <circle cx="240" cy="180" r="15" fill="#FFFFFF" />
+    <circle cx="272" cy="180" r="15" fill="#FFFFFF" />
+    <circle cx="243" cy="180" r="8" fill="#1E0E04" />
+    <circle cx="275" cy="180" r="8" fill="#1E0E04" />
+    <circle cx="241" cy="177" r="3" fill="#FFFFFF" />
+    <circle cx="273" cy="177" r="3" fill="#FFFFFF" />
+
+    <!-- Cute smiling mouth & rosy cheeks -->
+    <path d="M 246 205 Q 256 215 266 205" stroke="#FDE047" stroke-width="4" stroke-linecap="round" fill="none" />
+    <circle cx="230" cy="195" r="6" fill="#F43F5E" opacity="0.6" />
+    <circle cx="282" cy="195" r="6" fill="#F43F5E" opacity="0.6" />
+  </g>
+</svg>
